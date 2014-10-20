@@ -3,10 +3,9 @@
 <head>
 	<title>Index</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf8">
-	
+	<link rel="stylesheet" hreF="css/style.css"> 
 	<link rel="stylesheet" hreF="bootstrap/css/bootstrap.css"> 
 	<link rel="stylesheet" hreF="bootstrap/css/bootstrap-responsive.css"> 
-	<link rel="stylesheet" hreF="css/style.css"> 
 </head>
 <body>
 
@@ -29,9 +28,9 @@
 				<!-- <div class="span3"> -->
 				<div class="span4">
 					<!-- formulario que recibe el nombre y la contraseña con el cual se puede ingresar o registtrar -->
-					<form name="formulario prueba" id="formulario_registro" class="redondo" method="GET" action="perfil.php">
-						<label><h3>Nombre: </h3></label><br><input type="text" name="nombre" id="nombre"  class="formulario_datos"><br> 
-						<label><h3>Contraseña: </h3></label><br><input type="password" name="contrasena" id="contrasena"  class="formulario_datos"><br><br>
+					<form name="formulario prueba" id="formulario_registro" method="GET" action="perfil.php">
+						<label>Nombre:  </label><br><input type="text" name="nombre" id="nombre"  class="formulario_datos"><br> 
+						<label>Contraseña:	</label><br><input type="password" name="contrasena" id="contrasena"  class="formulario_datos"><br><br>
 						<input type="submit" value="entrar" name="entrar" id="entrar" class="formulario_datos"> <input type="submit" value="registrar" name="registrar" id="registrar" class="formulario_datos" style="float:right">
 					</form>
 				</div> 	

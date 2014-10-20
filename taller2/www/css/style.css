@@ -10,95 +10,24 @@ TALLER 2
 .section{
 margin-top: 50px;
 }*/
-*{
-	margin: 0px;
-	padding:0px;
-	text-decoration: none;
-	color: #413e49;
-}
-body{
-	background-color: #73616d;
-	/*background-color: red;*/
-}
-h3{
-	color: #f7e3be;
-	text-shadow:1px 1px  #413e49;
-
-}
-h4{
-	color: #413e49;
-	font-size: 25px;
-	text-shadow:1px 1px  #73616d;
-
-}
-table{
-	border-style: none;	
-	margin-top: 15px;
-}
-
-th{	
-	border-style: solid;
-	background-color: #413e49;
-	border-color: #73616d;
-		-moz-border-radius: 15px 15px 15px 15px;
-	/*para Safari y Chrome*/
-	-webkit-border-radius: 15px 15px 15px 15px;
-	/* para Opera */
-	border-radius: 15px 15px 15px 15px;
-	border-width: 5px;
-color: #f7e3be;
-padding: 10px;
-margin: 5px;
-
-}
-
-td{	
-	border-style: solid;	
-	background-color: #f7e3be;
-	border-color: #73616d;
-		-moz-border-radius: 15px 15px 15px 15px;
-	/*para Safari y Chrome*/
-	-webkit-border-radius: 15px 15px 15px 15px;
-	/* para Opera */
-	border-radius: 15px 15px 15px 15px;
-	border-width: 5px;
-color: #413e49;
-
-padding: 10px;
-margin: 5px;
-
-}
-b{
-	font-size: 20px;
-}
 #navegacion{
 	font-size: 10px;
-	background-color: #413e49;
-	-moz-border-radius: 5px 5px 15px 15px;
-	/*para Safari y Chrome*/
-	-webkit-border-radius: 5px 5px 15px 15px;
-	/* para Opera */
-	border-radius: 5px 5px 15px 15px;
-	box-shadow: 2px 2px #73616d;
-	position: fixed;
+	background-color: blue;
+position: fixed;
 	text-align: center;
 }
 #enlace{
-	color: #f7e3be;
+	color: gray;
 	text-decoration: none;
-	margin: 10px;
-		/*background-color: red;
-		width: 100%;*/
-}
-#enlace:hover{
-	color: #fcfce4;
+	margin: 10px;	
+
 }
 #formulario_registro{
 
 	font-size: 20px;
 	padding: 10px;
 	clear: right;
-	background-color: #413e49;
+	
 	border: 2px solid;
 	
 }
@@ -127,69 +56,33 @@ b{
 	margin-top: 60px;
 	/*background-color: green;*/
 }
-.redondo{
-	-moz-border-radius: 15px 15px 15px 15px;
-	/*para Safari y Chrome*/
-	-webkit-border-radius: 15px 15px 15px 15px;
-	/* para Opera */
-	border-radius: 15px 15px 15px 15px;
-	
-}
+
 .producto{
-	background-color: #a47e59;
-	 margin:15px;
+	background-color: yellow;
+	margin:15px;
 }
 
 .fondo_producto{
-	background-color: #f7e3be;
-	
-}
-.fondo_producto_arriba{
-	-moz-border-radius: 15px 15px 0px 0px;
-	/*para Safari y Chrome*/
-	-webkit-border-radius: 15px 15px 0px 0px;
-	/* para Opera */
-	border-radius: 15px 15px 0px 0px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 15px;
-	padding-left: 15px;
-
-}
-.fondo_producto_abajo{
-	-moz-border-radius: 0px 0px 15px 15px;
-	/*para Safari y Chrome*/
-	-webkit-border-radius: 0px 0px 15px 15px;
-	/* para Opera */
-	border-radius: 0px 0px 15px 15px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 15px;
-	padding-left: 15px;
+	background-color: pink;
 }
 
 
 #cate1{
-	background-color: #fcfce4;
+background-color: red;
 }
 #cate2{
-	background-color: #b38184;
+background-color: red;
 }
 #cate3{
-	background-color: #bbe9d0;
+background-color: red;
 }
 #cate4{
-	background-color: #b9d7d9;
+background-color: red;
 }
 #cate5{
-	background-color: #f0b39e;
+background-color: red;
 }
 .categorias{
-	background-color: #413e49;
-	-moz-border-radius: 15px 15px 15px 15px;
-	/*para Safari y Chrome*/
-	-webkit-border-radius: 15px 15px 15px 15px;
-	/* para Opera */
-	border-radius: 15px 15px 15px 15px;
-	margin: 5px;
+background-color: green;
+margin: 5px;
 }
