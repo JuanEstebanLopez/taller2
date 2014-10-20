@@ -3,10 +3,9 @@
 <head>
  <title>Index</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf8">
-	
+	<link rel="stylesheet" hreF="css/style.css"> 
 	<link rel="stylesheet" hreF="bootstrap/css/bootstrap.css"> 
 	<link rel="stylesheet" hreF="bootstrap/css/bootstrap-responsive.css"> 
-	<link rel="stylesheet" hreF="css/style.css"> 
 </head>
 <body>
 
@@ -49,21 +48,11 @@ echo '</div>
 		if($row['nombreP']<>""){
 			echo" <table border=1 cellpadding=4 cellspacing=0> <tr>   <th>Producto</th>  <th>Información</th> <th>Precio</th> <th>  </th> </tr>";
 
-			echo "<tr><td>  
-			<figure>
-				<img src='data/".$row['foto']."'> 
-			</figure>
-			 <br>".$row['nombreP']." </td> <td>".$row['info']."</td> <td>".$row['precio']."</td> <td>  <a  class='carrito' href='includes/agregarcarrito.php?producto=".$row['idP']." & compra=2 & pg=carrito'>Comprar </a> </td> </tr>";
+			echo "<tr><td>  ".$row['foto']." <br>".$row['nombreP']." </td> <td>".$row['info']."</td> <td>".$row['precio']."</td> <td>  <a  class='carrito' href='includes/agregarcarrito.php?producto=".$row['idP']." & compra=2 & pg=carrito'>Comprar </a> </td> </tr>";
 
 
 			while ($row = mysqli_fetch_array($resultado)) {
-				echo "<tr><td>  
-				<div class='ima ima_mensaje'> 
-				<figure>
-				<img src='data/".$row['foto']."'> 
-			</figure>
-			</div>
-				 <br>".$row['nombreP']." </td> <td>".$row['info']."</td> <td>".$row['precio']."</td> <td> <a  class='carrito' href='includes/agregarcarrito.php?producto=".$row['idP']." & compra=2 & pg=carrito'>Comprar </a> </td> </tr>";
+				echo "<tr><td>  ".$row['foto']." <br>".$row['nombreP']." </td> <td>".$row['info']."</td> <td>".$row['precio']."</td> <td> <a  class='carrito' href='includes/agregarcarrito.php?producto=".$row['idP']." & compra=2 & pg=carrito'>Comprar </a> </td> </tr>";
 			}
 		}else{
 			echo"<h3>No hay elementos en el carrito de compras</h3>";

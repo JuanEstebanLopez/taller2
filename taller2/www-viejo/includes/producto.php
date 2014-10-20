@@ -8,10 +8,10 @@
 // $compra
 // $pg
 echo '<div class="span3">
-	<div class="producto redondo">
+	<div class="producto">
 		
-		<div class="fondo_producto_arriba fondo_producto">
-			<b>'.$nombre.'</b>
+		<div class="fondo_producto">
+			'.$nombre.'
 		</div>
 
 		<div class="ima ima_mensaje"> 
@@ -20,7 +20,7 @@ echo '<div class="span3">
 			</figure> 
 		</div>
 
-		<div class="fondo_producto_abajo fondo_producto">
+		<div class="fondo_producto">
 			'.$info.'
 		
 			<div class="row">
