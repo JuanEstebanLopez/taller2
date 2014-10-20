@@ -3,9 +3,10 @@
 <head>
 	<title>Index</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf8">
-	<link rel="stylesheet" hreF="css/style.css"> 
+	
 	<link rel="stylesheet" hreF="bootstrap/css/bootstrap.css"> 
 	<link rel="stylesheet" hreF="bootstrap/css/bootstrap-responsive.css"> 
+	<link rel="stylesheet" hreF="css/style.css"> 
 </head>
 <body>
 
@@ -77,9 +78,17 @@
 			$row = mysqli_fetch_array($resultado);
 		if($row['nombreP']<>""){
 			echo" <table border=1 cellpadding=4 cellspacing=0> <tr>   <th>Producto</th>  <th>Información</th> <th>Precio</th> <th>Fecha de compra</th> </tr>";
-			echo "<tr><td>  ".$row['foto']." <br>".$row['nombreP']." </td> <td>".$row['info']."</td> <td>".$row['precio']."</td> <td>".$row['fecha']."</td> </tr>";
+			echo "<tr><td>  
+			<figure>
+				<img src='data/".$row['foto']."'> 
+			</figure>
+			 <br>".$row['nombreP']." </td> <td>".$row['info']."</td> <td>".$row['precio']."</td> <td>".$row['fecha']."</td> </tr>";
 			while ($row = mysqli_fetch_array($resultado)) {
-				echo "<tr><td>  ".$row['foto']." <br>".$row['nombreP']." </td> <td>".$row['info']."</td> <td>".$row['precio']."</td> <td>".$row['fecha']."</td> </tr>";
+				echo "<tr><td>  
+				<figure>
+				<img src='data/".$row['foto']."'> 
+			</figure>
+				 <br>".$row['nombreP']." </td> <td>".$row['info']."</td> <td>".$row['precio']."</td> <td>".$row['fecha']."</td> </tr>";
 			}
 		}else{
 			echo"<h3>Todavía no se han realizado compras</h3>";

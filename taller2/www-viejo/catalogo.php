@@ -3,10 +3,9 @@
 <head>
 	<title>Index</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf8">
-	
+	<link rel="stylesheet" hreF="css/style.css"> 
 	<link rel="stylesheet" hreF="bootstrap/css/bootstrap.css"> 
 	<link rel="stylesheet" hreF="bootstrap/css/bootstrap-responsive.css"> 
-	<link rel="stylesheet" hreF="css/style.css"> 
 </head>
 <body>
 
@@ -64,9 +63,9 @@
 
 				echo '<div class="container"><div class="span10 categorias">
 				
-				<div id="cate'.$row['idT'].'" class="fondo_producto_arriba">
+				<div id="cate'.$row['idT'].'">
 
-					<br><h4>'.$row["tipo"].' </h4><br>
+					<br>'.$row["tipo"].' <br>
 				</div>';
 
 				$tipo=$row["idT"];

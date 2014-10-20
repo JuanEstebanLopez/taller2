@@ -3,10 +3,9 @@
 <head>
 	<title>Index</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf8">
-	
+	<link rel="stylesheet" hreF="css/style.css"> 
 	<link rel="stylesheet" hreF="bootstrap/css/bootstrap.css"> 
 	<link rel="stylesheet" hreF="bootstrap/css/bootstrap-responsive.css"> 
-	<link rel="stylesheet" hreF="css/style.css"> 
 </head>
 <body>
 
@@ -41,37 +40,24 @@
 			</div>
 		</div>';
 		// ordena los productos por tipo
-		$query = "SELECT *  FROM tallerd.productos ORDER BY productos.idT ";
+		// $query = "SELECT *  FROM tallerd.productos ORDER BY productos.idT ";
 		// ordena los productos por lo más comprados
-		// $query = "SELECT *  FROM tallerd.productos ORDER BY productos.compras DESC ";
+		$query = "SELECT *  FROM tallerd.productos ORDER BY productos.compras DESC ";
 		$resultado=mysqli_query($conexion,$query);
 
-		$tipo=0;
+		$pro=0;
 		$conta=3;
-		while ($row = mysqli_fetch_array($resultado)) {
-			if($tipo<$row['idT']){
-				if($tipo>0){
-
-					if($conta%3<>0){
-						if($conta>3){
-							echo '</div>';
-							$conta=3;
-						}
-					}
-
-					echo "</div></div>";
-				}
 
 				echo '<div class="container"><div class="span10 categorias">
 				
-				<div id="cate'.$row['idT'].'" class="fondo_producto_arriba">
+				<div id="cate5">
 
-					<br><h4>'.$row["tipo"].' </h4><br>
+					<br> Los más vendidos <br>
 				</div>';
 
-				$tipo=$row["idT"];
-				
-			}	
+
+				// muestra los 10 productos más vendidos 
+		while ($row = mysqli_fetch_array($resultado) AND $pro<10) {
 
 			if($conta%3==0){
 				if($conta>3){
@@ -95,6 +81,7 @@
 
 		}
 		echo "</div>";
+		echo "</div></div>";
 
 	}else{ 
 				// si no no hay sesión vuelve al inicio
